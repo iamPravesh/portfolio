@@ -1,0 +1,35 @@
+.header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.header__description {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+/* happy emoji rotating animation */
+
+.happy-emoji {
+  animation: happy-emoji 1s infinite;
+}
+
+@keyframes happy-emoji {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

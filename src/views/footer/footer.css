@@ -1,0 +1,32 @@
+.footer{
+    /* background-color: #000; */
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__text{
+    font-size: 1.3rem;
+    animation: blinker 1s linear infinite;
+}
+
+/* footer text blinker animation */
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.footer__connection{
+    font-size: 1.3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}

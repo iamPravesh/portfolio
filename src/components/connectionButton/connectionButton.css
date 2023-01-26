@@ -1,0 +1,31 @@
+.connectionButton__link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.1s ease;
+    text-align: center;
+}
+
+.connectionButton__link:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.connectionButton__link:active{
+    transform: scale(0.95);
+}
+
+.connectionButton__text{
+    margin-right: 10px;
+}
+
