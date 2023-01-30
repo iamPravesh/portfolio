@@ -1,0 +1,14 @@
+.about{
+    text-align: center;
+    border-radius: 5px;
+    height: 100%;
+    max-height: 70vh;
+    width: 90%;
+    color: black;
+    overflow: auto;
+}
+
+/* hide scroll bar */
+.about::-webkit-scrollbar {
+    display: none;
+}
