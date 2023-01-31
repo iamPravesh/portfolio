@@ -1,14 +1,116 @@
-.about{
-    text-align: center;
-    border-radius: 5px;
-    height: 100%;
-    max-height: 70vh;
-    width: 90%;
-    color: black;
-    overflow: auto;
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* hide scroll bar */
-.about::-webkit-scrollbar {
-    display: none;
+.about__description {
+  text-align: center;
+  border-radius: 5px;
+  width: 70%;
+  color: white;
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.about__description::-webkit-scrollbar {
+  display: none;
+}
+
+.about__description__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about__description__text {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.about__description__text__highlight {
+  color: #ff0000;
+}
+
+.about__photo__container {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #131313;
+}
+
+.about__photo:hover {
+  animation: animate_border 1s ease-in-out infinite;
+}
+
+@keyframes animate_border {
+  0% {
+    border-color: #131313;
+  }
+  50% {
+    border-color: #ffffff;
+  }
+  100% {
+    border-color: #131313;
+  }
+}
+
+.about__photo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skills-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+
+.skills-section__skills {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section__skill__box {
+  /* a div with border and padding and box-shadow to make it look modern */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+  border-radius: 5px;
+  padding: 1%;
+  box-shadow: 0 0 10px 0 rgba(182, 165, 165, 0.5);
+  margin: 2%;
+}
+
+.skills-section__skill__title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+  /* playful font */
+  font-family: "Lobster", cursive;
 }

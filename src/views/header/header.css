@@ -17,9 +17,9 @@
 .header__description {
   font-size: 1.3rem;
   padding: 1rem;
-  transition: all 0.5s ease;
+  font-family: 'Pacifico', cursive;
+  transition: fade-in 1s ease-in-out;
 }
-
 
 /* happy emoji rotating animation */
 
